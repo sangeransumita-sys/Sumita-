@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name – Financial analyst</title>
+  <meta name="description" content="Portfolio of Your Name, a financial analyst building models, forecasts and dashboards that help teams make better money decisions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Your Name</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>I turn messy numbers into clear financial decisions.</h1>
+        <p class="lead">
+          I’m a financial analyst who builds forecasts, valuation models and
+          reporting dashboards for growing companies. Based in [City], open to
+          full-time roles and freelance projects.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="chart-panel">
+        <svg viewBox="0 0 480 300" role="img" aria-labelledby="chart-title chart-desc">
+          <title id="chart-title">Portfolio growth chart</title>
+          <desc id="chart-desc">A line chart showing steady growth with a few dips, ending at the highest point.</desc>
+          <defs>
+            <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#E8447F" stop-opacity="0.35"/>
+              <stop offset="1" stop-color="#E8447F" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="grid">
+            <line x1="0" y1="60"  x2="480" y2="60"/>
+            <line x1="0" y1="120" x2="480" y2="120"/>
+            <line x1="0" y1="180" x2="480" y2="180"/>
+            <line x1="0" y1="240" x2="480" y2="240"/>
+          </g>
+          <path class="area" d="M0 250 L40 232 L80 238 L120 205 L160 214 L200 170 L240 182 L280 140 L320 150 L360 104 L400 116 L440 62 L440 300 L0 300 Z"/>
+          <path class="line" pathLength="1" d="M0 250 L40 232 L80 238 L120 205 L160 214 L200 170 L240 182 L280 140 L320 150 L360 104 L400 116 L440 62"/>
+          <circle class="dot" cx="440" cy="62" r="7"/>
+        </svg>
+        <figcaption>
+          <dl class="figures">
+            <div><dt>Forecast accuracy</dt><dd>96%</dd></div>
+            <div><dt>Budgets managed</dt><dd>$48M</dd></div>
+            <div><dt>Years of experience</dt><dd>6</dd></div>
+          </dl>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>
+          I’ve spent six years helping finance teams work out where the money
+          goes and where it should go next. I like the moment a spreadsheet
+          stops being a pile of cells and starts answering a real question.
+        </p>
+        <p>
+          I hold a degree in Finance and I’m a CFA Level II candidate.
+          Outside work I invest in index funds, run a small budgeting
+          newsletter and bake far too much bread.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Work history</caption>
+          <thead>
+            <tr>
+              <th scope="col">Role</th>
+              <th scope="col">Company</th>
+              <th scope="col">Period</th>
+              <th scope="col">What I did</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Senior financial analyst</th>
+              <td>Company Name</td>
+              <td class="num">2023 – now</td>
+              <td>Own the quarterly forecast and board reporting pack.</td>
+            </tr>
+            <tr>
+              <th scope="row">Financial analyst</th>
+              <td>Company Name</td>
+              <td class="num">2020 – 2023</td>
+              <td>Built the budgeting model used by 12 departments.</td>
+            </tr>
+            <tr>
+              <th scope="row">Audit associate</th>
+              <td>Company Name</td>
+              <td class="num">2018 – 2020</td>
+              <td>Audited mid-size retail and logistics clients.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2>Selected projects</h2>
+      <ul class="projects">
+        <li>
+          <div>
+            <h3>Three-statement forecast model</h3>
+            <p>Linked income statement, balance sheet and cash flow with scenario switches for best, base and worst case.</p>
+            <p class="tools">Excel, Power Query</p>
+          </div>
+          <p class="result"><strong>-18%</strong> time spent closing each month</p>
+        </li>
+        <li>
+          <div>
+            <h3>Cash flow dashboard</h3>
+            <p>A live dashboard showing runway, receivables and spending by team, replacing a weekly slide deck.</p>
+            <p class="tools">Power BI, SQL</p>
+          </div>
+          <p class="result"><strong>9 weeks</strong> of runway found in unused spend</p>
+        </li>
+        <li>
+          <div>
+            <h3>Startup valuation study</h3>
+            <p>Discounted cash flow and comparable-company valuation for a seed-stage fintech raising its first round.</p>
+            <p class="tools">Excel, Python</p>
+          </div>
+          <p class="result"><strong>$2.4M</strong> raised at the valuation I proposed</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Analysis</h3>
+          <ul>
+            <li>Financial modelling</li>
+            <li>Forecasting and budgeting</li>
+            <li>Valuation</li>
+            <li>Variance analysis</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>Excel and Google Sheets</li>
+            <li>Power BI and Tableau</li>
+            <li>SQL and Python</li>
+            <li>Bloomberg Terminal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2>Let’s work together</h2>
+      <p>Hiring, or have a project in mind? Send me a message and I’ll reply within two working days.</p>
+      <a class="email" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/your-handle">LinkedIn</a></li>
+        <li><a href="https://github.com/your-handle">GitHub</a></li>
+        <li><a href="#">Download résumé</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Your Name</p>
+  </footer>
+
+</body>
+</html>
